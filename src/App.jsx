@@ -95,7 +95,7 @@ export default function App(){
                <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
                <div className="grid grid-cols-1 min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-10 p-5 relative">
                     <Projects projectId="projectOne"  link="https://gaming-arena-neon.vercel.app/" projHdng="Gaming Arena" projDscrptn={project01Decription} videoSrc="/gamingArenaVideo.mp4"/>
-                    <Projects projectId="projectTwo"  link="https://to-do-app-woad-seven.vercel.app/" projHdng="ToDo App"     projDscrptn={project01Decription} videoSrc="/toDoAppVideo.mp4"/>
+                    <Projects projectId="projectTwo"  link="https://to-do-app-woad-seven.vercel.app/" projHdng="ToDo App"     projDscrptn={project02Decription} videoSrc="/toDoAppVideo.mp4"/>
                </div>
                  
           </section>
