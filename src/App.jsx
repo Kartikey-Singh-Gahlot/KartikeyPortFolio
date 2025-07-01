@@ -96,7 +96,6 @@ export default function App(){
                <div className="grid grid-cols-1 min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-10 p-5 relative">
                     <Projects projectId="projectOne"   projHdng="Gaming Arena" projDscrptn={project01Decription} videoSrc="/gamingArenaVideo.mp4"/>
                     <Projects projectId="projectTwo"   projHdng="ToDo App"     projDscrptn={project01Decription} videoSrc="/toDoAppVideo.mp4"/>
-                    <Projects projectId="projectThree" projHdng="ToDo App"     projDscrptn={project01Decription}  videoSrc="/gamingArenaVideo.mp4"/>
                </div>
                  
           </section>
