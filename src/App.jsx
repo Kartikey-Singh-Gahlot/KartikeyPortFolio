@@ -27,7 +27,7 @@ export default function App(){
                        <ul className="min-[790px]:flex hidden justify-between">
                             <List mainLi="Home"  link="#pageOne" linkTarget="" />
                             <List mainLi="About" link="#pageTwo" linkTarget="" />
-                            <List mainLi="Projects" subLi={["One","Two","Three", "Four"]} subLink={["#projectOne", "#projectTwo", "", ""]} link="#pageThree" linkTarget=""/>
+                            <List mainLi="Projects" subLi={["One","Two"]} subLink={["#projectOne", "#projectTwo"]} link="#pageThree" linkTarget="_blank"/>
                             <List mainLi="Contacts" link="#pageFour" linkTarget=""/>
                        </ul>
 
