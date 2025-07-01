@@ -5,7 +5,7 @@ import Projects from "./Projects.jsx";
 import Headings from "./Headings.jsx";
 import List from "./List.jsx";
 import Skills from "./Skills.jsx";
-import {aboutMeDecription, project01Decription, mailLink, cvLink, myPicLink,  skillItems} from "./tools.js" ;
+import {aboutMeDecription, project01Decription, project02Decription, mailLink, cvLink, myPicLink,  skillItems} from "./tools.js" ;
 
 export default function App(){
 
