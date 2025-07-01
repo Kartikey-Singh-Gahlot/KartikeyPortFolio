@@ -6,7 +6,7 @@ export default function Projects({projHdng, projDscrptn,videoSrc ,projectId, lin
 
             <video autoPlay loop muted className="h-full object-contain rounded-[10px] border-[1px] border-amber-50" src={videoSrc}/>
             
-            <p className="w-full text-center text-[15px] text-justify">
+            <p className="w-full text-[15px] text-justify">
                 {projDscrptn} 
             </p>
        </a>
