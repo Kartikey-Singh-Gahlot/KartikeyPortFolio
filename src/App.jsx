@@ -15,7 +15,10 @@ let [headerStyle, setHeaderStyle] = useState(headerData[0]);
 let [navStyle, setNavStyle] = useState(navData[0]);
 
 function trgrMobNav(){
-  if(status==0){
+
+  if (window.innerWidth >= 790) return;
+
+  if(status == 0){
      setStatus(1);
      setHeaderStyle(headerData[1]);
      setNavStyle(navData[1]);
@@ -33,7 +36,7 @@ function trgrMobNav(){
           <header className={headerStyle}>
 
                <div className="flex justify-around w-full">
-                 <h1 className="text-[10px] w-full text-amber-50 font-roboto sm:text-2xl ">Kartikey Singh Gahlot</h1>
+                 <h1 className="text-[15px] w-full text-amber-50 font-roboto sm:text-2xl ">Kartikey Singh Gahlot</h1>
                  <div className="block min-[790px]:hidden " onClick={trgrMobNav}>
                       <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
                       <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
@@ -44,10 +47,10 @@ function trgrMobNav(){
                <nav className="">
 
                        <ul className={navStyle}>
-                            <List mainLi="Home"  link="#pageOne" linkTarget="" onClick={trgrMobNav}/>
-                            <List mainLi="About" link="#pageTwo" linkTarget="" onClick={trgrMobNav}/>
-                            <List mainLi="Projects" subLi={["One","Two"]} subLink={["#projectOne", "#projectTwo"]} link="#pageThree" linkTarget="_blank" onClick={trgrMobNav}/>
-                            <List mainLi="Contact" link="#pageFour" linkTarget="" onClick={trgrMobNav}/>
+                            <List mainLi="Home"  link="#pageOne" linkTarget="" onClk={trgrMobNav}/>
+                            <List mainLi="About" link="#pageTwo" linkTarget="" onClk={trgrMobNav}/>
+                            <List mainLi="Projects" subLi={["One","Two"]} subLink={["#projectOne", "#projectTwo"]} link="#pageThree" linkTarget="" onClk={trgrMobNav}/>
+                            <List mainLi="Contact" link="#pageFour" linkTarget="" onClk={trgrMobNav}/>
                        </ul>
 
                  </nav>
@@ -112,9 +115,9 @@ function trgrMobNav(){
 
           <section className="h-fit flex flex-col justify-between gap-10 px-2" id="pageThree">
                <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
-               <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-10 p-10 relative">
-                    <Projects projectId="projectOne"  link="https://gaming-arena-neon.vercel.app/" projHdng="Gaming Arena" projDscrptn={project01Decription} videoSrc="/gamingArenaVideo.mp4"/>
-                    <Projects projectId="projectTwo"  link="https://to-do-app-woad-seven.vercel.app/" projHdng="ToDo App"     projDscrptn={project02Decription} videoSrc="/toDoAppVideo.mp4"/>
+               <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-2 p-5 relative">
+                    <Projects projectId="projectOne"    link="https://gaming-arena-neon.vercel.app/"            projHdng="Gaming Arena"              projDscrptn={project01Decription} videoSrc="/gamingArenaVideo.mp4"/>
+                    <Projects projectId="projectTwo"    link="https://to-do-app-woad-seven.vercel.app/"         projHdng="ToDo App"                  projDscrptn={project02Decription} videoSrc="/toDoAppVideo.mp4"/>
                     <Projects projectId="projectThree"  link="https://kartikey-singh-gahlot.github.io/ChatBot/" projHdng="Patient Query Webpage"     projDscrptn={project03Decription} videoSrc="/chatBotAppVideo.mp4"/>
                </div>
                  
