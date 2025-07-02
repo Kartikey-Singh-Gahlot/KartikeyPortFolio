@@ -608,6 +608,16 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .min-\[500px\]\:grid-cols-3 {
+    @media (width >= 500px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .min-\[700px\]\:grid-cols-3 {
+    @media (width >= 700px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .min-\[780px\]\:block {
     @media (width >= 780px) {
       display: block;
