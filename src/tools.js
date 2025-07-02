@@ -6,3 +6,9 @@ export const skillItems = ["HTML","CSS","Tailwindcss","JavaScript","React JS","G
 export const cvLink = "/Kartz_CV.pdf";
 export const mailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=2002gehlotkartikeysingh@gmail.com&su=Hiring&body=Hi%20Kartikey";
 export const myPicLink = "/kartikeyPic.png";
+
+
+export const headerData = ["z-20 bg-gradient-to-r from-[#121d31] to-black sticky top-0 h-fit w-full flex justify-between items-center box-border py-5 px-10","z-20 bg-gradient-to-r from-black to-black sticky top-0 h-screen w-full flex  flex-col box-border py-5 px-10"];
+export const hrOldData = [];
+export const hrNewData = [];
+export const navData = ["min-[790px]:flex hidden justify-between","min-[790px]:flex flex flex-col"];

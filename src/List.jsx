@@ -20,7 +20,7 @@ export default function List({mainLi, subLi, link, linkTarget, subLink}){
 
     return(
         <a href={link} target={linkTarget}>
-          <li className="hover:bg-blue-700 text-[15px] text-amber-50 px-6 py-2 w-full rounded-3xl">{mainLi}</li>
+          <li className="hover:bg-blue-700 text-[15px] text-amber-50 px-6 py-2 w-full rounded-3xl" >{mainLi}</li>
         </a>  
     );
  }
