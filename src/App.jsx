@@ -127,18 +127,20 @@ function trgrMobNav(){
 
                <Headings pageHeadingStyle="" pageHeading="Contact" headingId="pageFour"/>
               
-               <div className="flex justify-center">
+               <div className="flex justify-around flex-col gap-10 items-center px-10 w-full h-fit">
 
-                       <div className=" flex flex-col w-full text-amber-50 justify-around">
-                          <a href="mailto:2002gehlotkartikeysingh@gmail.com" className="underline hover:text-blue-400">2002gehlotkartikeysingh@gmail.com</a>
-                          📍 Location: Jaipur, Rajasthan, India
-                          <a href={cvLink} className="underline hover:text-blue-400" target="_blank">View Here</a>
-                          <a href="https://github.com/kartikey-singh-gahlot" target="_blank" className="underline hover:text-blue-400">kartikey-singh-gahlot</a>
-                       </div>
-
-                       <p className="text-amber-50 text-justify">
+                       <p className="text-amber-50 text-justify w-full">
                          I'm always excited to collaborate on new and exciting projects — whether it's frontend development, full-stack applications, or just tech talk!  If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out.  Let's build something amazing together!
                        </p>
+
+                       <ul className=" flex flex-col w-full text-amber-50 justify-around">
+                          <li className="w-full text-justify">Mail :<a href="mailto:2002gehlotkartikeysingh@gmail.com" className="underline hover:text-blue-400">2002gehlotkartikeysingh@gmail.com</a></li>
+                          <li className="w-full text-justify">Location : <a>Jaipur, Rajasthan, India</a></li>
+                          <li className="w-full text-justify">CV : <a href={cvLink} className="underline hover:text-blue-400" target="_blank">View Here</a></li>
+                          <li className="w-full text-justify">GitHub : <a href="https://github.com/kartikey-singh-gahlot" target="_blank" className="underline hover:text-blue-400">kartikey-singh-gahlot</a></li>
+                          
+                       </ul>
+
                </div>
 
           </footer>

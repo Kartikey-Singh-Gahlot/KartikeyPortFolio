@@ -323,8 +323,14 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -628,6 +634,11 @@
   .min-\[780px\]\:flex-col {
     @media (width >= 780px) {
       flex-direction: column;
+    }
+  }
+  .min-\[780px\]\:flex-row {
+    @media (width >= 780px) {
+      flex-direction: row;
     }
   }
   .min-\[780px\]\:gap-0 {
