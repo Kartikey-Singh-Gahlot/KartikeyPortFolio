@@ -74,7 +74,7 @@ function trgrMobNav(){
                            <div className=" relative bottom-1 triangleBg bg-black h-full w-full" />
                       </div>
 
-                     <img src={myPicLink} className=" relative z-10 min-[790px]:w-80 w-50 object-cover rounded-full" alt="" />
+                     <img src={myPicLink} className=" relative z-10 min-[790px]:w-80 w-50 object-cover rounded-full" alt="my Image" />
                  </div>
 
                </div>
