@@ -59,7 +59,7 @@ function trgrMobNav(){
 
           
 
-          <section className="h-screen flex flex-col justify-evenly gap-10" >
+          <section className="h-screen flex flex-col justify-evenly gap-10 pages" >
 
                <div className=" flex flex-col min-[430px]:flex-row  min-[430px]:justify-evenly items-center justify-center box-border min-[430px]:px-10  gap-10" headingId="pageOne">
 
@@ -92,7 +92,7 @@ function trgrMobNav(){
 
           </section>
 
-          <section className="grid min-[780px]:grid-cols-[1fr_2fr] min-[780px]:grid-row-auto grid-col-1 grid-row-[1fr_2fr] min-[780px]:gap-0 gap-10 box-border px-5 pt-10 pb-30" >
+          <section className="pages grid min-[780px]:grid-cols-[1fr_2fr] min-[780px]:grid-row-auto grid-col-1 grid-row-[1fr_2fr] min-[780px]:gap-0 gap-10 box-border px-5 pt-10 pb-30" >
 
             
                <div className="flex justify-center items-end">
@@ -113,7 +113,7 @@ function trgrMobNav(){
           </section>
 
 
-          <section className="h-fit flex flex-col justify-between gap-10 px-2">
+          <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 ">
                <Headings pageHeadingStyle="w-full" pageHeading="Projects" headingId="pageThree"/>
                <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-2 p-5 relative">
                     <Projects projectId="projectOne"    link="https://gaming-arena-neon.vercel.app/"            projHdng="Gaming Arena"              projDscrptn={project01Decription} videoSrc="/gamingArenaVideo.mp4"/>
@@ -122,16 +122,26 @@ function trgrMobNav(){
                </div>
                  
           </section>
+         
+          <footer className="pages h-fit flex flex-col  pb-30">
 
-          <section className="h-screen"  >
-                   <footer>
-                           <Headings pageHeadingStyle="" pageHeading="Contact" headingId="pageFour"/>
-                           <p className="text-amber-50 text-justify px-5">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum inventore ipsum facere, ad aut velit quisquam itaque enim magnam, nemo rerum cupiditate ratione illo labore dolor, rem quia maiores possimus quis? Enim doloribus praesentium corporis nulla repellat excepturi earum tempora nam. Atque numquam assumenda quam corporis quia beatae? Itaque voluptatibus, doloribus temporibus tenetur ipsa accusantium maxime vitae impedit id incidunt. Sed quis, aliquam unde inventore explicabo ut earum rerum veniam sunt quod. Expedita unde illum culpa quod excepturi quam obcaecati hic nobis exercitationem magnam, officia blanditiis fugiat recusandae nulla eum quae iure totam eos tenetur molestiae mollitia earum consequatur? Repellendus.
-                           </p>
-                   </footer>
-          </section>
+               <Headings pageHeadingStyle="" pageHeading="Contact" headingId="pageFour"/>
+              
+               <div className="flex justify-center">
 
+                       <div className=" flex flex-col w-full text-amber-50 justify-around">
+                          <a href="mailto:2002gehlotkartikeysingh@gmail.com" className="underline hover:text-blue-400">2002gehlotkartikeysingh@gmail.com</a>
+                          📍 Location: Jaipur, Rajasthan, India
+                          <a href={cvLink} className="underline hover:text-blue-400" target="_blank">View Here</a>
+                          <a href="https://github.com/kartikey-singh-gahlot" target="_blank" className="underline hover:text-blue-400">kartikey-singh-gahlot</a>
+                       </div>
+
+                       <p className="text-amber-50 text-justify">
+                         I'm always excited to collaborate on new and exciting projects — whether it's frontend development, full-stack applications, or just tech talk!  If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out.  Let's build something amazing together!
+                       </p>
+               </div>
+
+          </footer>
 
     </div>
   )
