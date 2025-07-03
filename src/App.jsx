@@ -132,11 +132,11 @@ function trgrMobNav(){
                        </p>
 
                     <footer className="flex w-full h-fit items-center justify-center  bg-gradient-to-r from-gray-800 to-gray-950 py-10">
-                         <ul className=" flex  text-amber-50 justify-evenly  items-center flex-col min-[780px]:flex-row ">
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 sm:text-center w-fit "><img src="/mailIcon.png"      className="m-1"/> Mail :   <a  href="mailto:2002gehlotkartikeysingh@gmail.com"                 className="mx-1 underline hover:text-blue-400">2002gehlotkartikeysingh@gmail.com</a></li>
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 sm:text-center w-fit "><img src="/locationIcon.png"  className="m-1"/>Location :<a                                                                  className="mx-1 ">Jaipur, Rajasthan, India</a></li>
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 sm:text-center w-fit "><img src="cvIcon.png"         className="m-1"/>CV :      <a  href={cvLink}                                                   className="mx-1 underline hover:text-blue-400" target="_blank">View Here</a></li>
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 sm:text-center w-fit "><img src="githubIcon.png"     className="m-1"/>GitHub :  <a  href="https://github.com/kartikey-singh-gahlot" target="_blank" className="mx-1 underline hover:text-blue-400">kartikey-singh-gahlot</a></li>       
+                         <ul className=" flex  text-amber-50 justify-evenly items-center flex-col min-[780px]:flex-row ">
+                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="/mailIcon.png"      className="m-1"/> Mail :   <a  href="mailto:2002gehlotkartikeysingh@gmail.com"                 className="mx-1 underline hover:text-blue-400">2002gehlotkartikeysingh@gmail.com</a></li>
+                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="/locationIcon.png"  className="m-1"/>Location :<a                                                                  className="mx-1 ">Jaipur, Rajasthan, India</a></li>
+                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="cvIcon.png"         className="m-1"/>CV :      <a  href={cvLink}                                                   className="mx-1 underline hover:text-blue-400" target="_blank">View Here</a></li>
+                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="githubIcon.png"     className="m-1"/>GitHub :  <a  href="https://github.com/kartikey-singh-gahlot" target="_blank" className="mx-1 underline hover:text-blue-400">kartikey-singh-gahlot</a></li>       
                         </ul>
                     </footer>               
           </section>
