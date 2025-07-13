@@ -1,4 +1,4 @@
-export default function Headings({pageHeading, pageHeadingStyle, headingId}){
+export default function Headings({pageHeading, pageHeadingStyle}){
 
  let crntStyle = "min-[430px]:text-4xl text-3xl  text-amber-50 text-center my-5";
 
@@ -6,5 +6,5 @@ export default function Headings({pageHeading, pageHeadingStyle, headingId}){
     crntStyle = crntStyle.concat(pageHeadingStyle);
  }
 
- return <h1  id={headingId} className={crntStyle}>{pageHeading}</h1>
+ return <h1 className={crntStyle}>{pageHeading}</h1>
 }

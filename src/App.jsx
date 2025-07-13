@@ -59,9 +59,9 @@ function trgrMobNav(){
 
           
 
-          <section className="h-screen flex flex-col justify-evenly gap-10 pages" >
+          <section className="h-screen flex flex-col justify-evenly gap-10 pages " id="pageOne">
 
-               <div className=" flex flex-col min-[430px]:flex-row  min-[430px]:justify-evenly items-center justify-center box-border min-[430px]:px-10  gap-10" headingId="pageOne">
+               <div className=" flex flex-col min-[430px]:flex-row  min-[430px]:justify-evenly items-center justify-center box-border min-[430px]:px-10  gap-10">
 
                  <div className="min-[430px]:h-full h-fit flex flex-col justify-center gap-2">
                       <h1 className=" min-[430px]:py-2 py-0 w-full text-amber-50 min-[790px]:text-4xl text-2xl">Hello, Kartikey This side </h1>
@@ -82,19 +82,14 @@ function trgrMobNav(){
                <div className="w-full flex gap-5 justify-center">
                       <Button href={cvLink}   variant="outlined" size="large" sx={{'color':"white",'textTransform':'none',':hover':{ 'backgroundColor':'blue'}}} >My Resume</Button>
                       <Button href={mailLink} variant="outlined" size="large" sx={{'color':"white",'textTransform':'none',':hover':{ 'backgroundColor':'blue'}}} >Hire Me</Button>
-
                </div>
 
               
                <Skills skills={skillItems} />
 
-
-
           </section>
 
-          <section className="pages grid min-[780px]:grid-cols-[1fr_2fr] min-[780px]:grid-row-auto grid-col-1 grid-row-[1fr_2fr] min-[780px]:gap-0 gap-10 box-border px-5 pt-10 pb-30" >
-
-            
+          <section className="pages grid min-[780px]:grid-cols-[1fr_2fr] min-[780px]:grid-row-auto grid-col-1 grid-row-[1fr_2fr] min-[780px]:gap-0 gap-10 box-border px-5 pt-10 pb-30" id="pageTwo">
                <div className="flex justify-center items-end">
                     <ul className= "flex min-[780px]:flex-col  w-full flex-row  justify-evenly min-[780px]:gap-0 gap-2">
                          <li className="box-border  h-full text-center  sm:text-3xl text-[12px]  px-3 py-2 min-[780px]:border-l-3 min-[780px]:border-b-0 border-b-3 border-l-0 border-amber-50 text-amber-50 w-full">Web Development</li>
@@ -104,17 +99,21 @@ function trgrMobNav(){
                </div>
 
                 <div className="">
-                    
-                    <Headings  pageHeading="About me" headingId="pageTwo"/>
+                    <Headings  pageHeading="About me" />
                     <p className="text-amber-50 text-justify">
                          {aboutMeDecription}
                    </p>
                 </div>
+
+                <div className="col-start-1 col-end-3 mt-10">
+                     <Headings pageHeading="Experience" />
+                    <p className="text-amber-50 box-border px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo ex at tenetur ab nam deleniti consequatur, ut enim delectus, doloribus corrupti nobis earum adipisci neque molestias! Vel explicabo ipsa quo fugiat tenetur in reiciendis debitis commodi aliquam quidem. Ea nulla et ut odio. Magnam animi natus quas inventore deserunt?</p>
+                </div>
           </section>
 
 
-          <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 ">
-               <Headings pageHeadingStyle="w-full" pageHeading="Projects" headingId="pageThree"/>
+          <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 " id="pageThree">
+               <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
                <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-2 p-5 relative">
                     <Projects projectId="projectOne"    link="https://gaming-arena-neon.vercel.app/"            projHdng="Gaming Arena"              projDscrptn={project01Decription} videoSrc="/gamingArenaVideo.mp4"/>
                     <Projects projectId="projectTwo"    link="https://to-do-app-woad-seven.vercel.app/"         projHdng="ToDo App"                  projDscrptn={project02Decription} videoSrc="/toDoAppVideo.mp4"/>
@@ -123,9 +122,9 @@ function trgrMobNav(){
                  
           </section>
          
-          <section className="pages h-fit flex flex-col items-center">
+          <section className="pages h-fit flex flex-col items-center" id="pageFour">
 
-               <Headings pageHeadingStyle="" pageHeading="Contact" headingId="pageFour"/>
+               <Headings pageHeadingStyle="" pageHeading="Contact" />
               
                        <p className="text-amber-50 min-[780px]:text-center text-justify py-10 px-10">
                          I'm always excited to collaborate on new and exciting projects — whether it's frontend development, full-stack applications, or just tech talk! <br></br> If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out. <br></br> Let's build something amazing together!
