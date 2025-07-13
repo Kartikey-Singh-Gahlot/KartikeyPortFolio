@@ -7,6 +7,7 @@ import List from "./List.jsx";
 import Skills from "./Skills.jsx";
 import {aboutMeDecription, project01Decription, project02Decription,project03Decription, mailLink, cvLink, myPicLink,  skillItems, headerData, navData} from "./tools.js" ;
 import { useState } from "react";
+import Experience from "./Experience.jsx";
 
 export default function App(){
 
@@ -100,16 +101,19 @@ function trgrMobNav(){
 
                 <div className="">
                     <Headings  pageHeading="About me" />
-                    <p className="text-amber-50 text-justify">
+                    <p className="text-amber-50  md:text-[15px] text-[12px] text-justify">
                          {aboutMeDecription}
                    </p>
                 </div>
-
-                <div className="col-start-1 col-end-3 mt-10">
-                     <Headings pageHeading="Experience" />
-                    <p className="text-amber-50 box-border px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo ex at tenetur ab nam deleniti consequatur, ut enim delectus, doloribus corrupti nobis earum adipisci neque molestias! Vel explicabo ipsa quo fugiat tenetur in reiciendis debitis commodi aliquam quidem. Ea nulla et ut odio. Magnam animi natus quas inventore deserunt?</p>
-                </div>
           </section>
+
+          <section>
+               <Headings pageHeading="Experience" pageHeadingStyle="w-full text-center" />   
+               <div className="col-start-1 col-end-3 mt-10 min-[780px]:grid flex flex-col grid-cols-2 grid-rows-[auto] mb-10">
+                      <Experience experienceTitle="Business Development Associate | BANAO Technologies Benagaluru, Karnataka" experienceDescription={[" Managed lead generation and business expansion strategies.", "Identified and engaged potential clients through outreach.", "Contributed in the scrapping extensions of the company."]}           experienceBoxStyle=" box-border  col-span-1 px-5 text-[13px] my-5 min-[780px]:text-right text-justify row-start-2 row-end-3 col-start-1 text-amber-50 "/>
+                      <Experience experienceTitle="Junior Training Manager | BANAO Technologies Benagaluru, Karnataka"        experienceDescription={["Assisted senior trainers in onboarding and training new hires", "Supervised a team of BDAs and promoted a positive team culture.", "Analyzed team progress and maintained performance records."]} experienceBoxStyle=" box-border  col-span-1 px-5 text-[13px] my-5 min-[780px]:text-left   text-justify row-start-3 row-end-4 col-start-2 text-amber-50 "/>
+                </div>
+           </section>
 
 
           <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 " id="pageThree">
