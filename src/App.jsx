@@ -109,9 +109,9 @@ function trgrMobNav(){
 
           <section>
                <Headings pageHeading="Experience" pageHeadingStyle="w-full text-center" />   
-               <div className="col-start-1 col-end-3 mt-10 min-[780px]:grid flex flex-col grid-cols-2 grid-rows-[auto] mb-10">
-                      <Experience experienceTitle="Business Development Associate | BANAO Technologies Benagaluru, Karnataka" experienceDescription={[" Managed lead generation and business expansion strategies.", "Identified and engaged potential clients through outreach.", "Contributed in the scrapping extensions of the company."]}           experienceBoxStyle=" box-border  col-span-1 px-5 text-[13px] my-5 min-[780px]:text-right text-justify row-start-2 row-end-3 col-start-1 text-amber-50 "/>
-                      <Experience experienceTitle="Junior Training Manager | BANAO Technologies Benagaluru, Karnataka"        experienceDescription={["Assisted senior trainers in onboarding and training new hires", "Supervised a team of BDAs and promoted a positive team culture.", "Analyzed team progress and maintained performance records."]} experienceBoxStyle=" box-border  col-span-1 px-5 text-[13px] my-5 min-[780px]:text-left   text-justify row-start-3 row-end-4 col-start-2 text-amber-50 "/>
+               <div className="col-start-1 col-end-3 mt-10 md:grid flex flex-col grid-cols-2 grid-rows-[auto] mb-10 ">
+                      <Experience experienceTitle="Business Development Associate | BANAO Technologies Benagaluru, Karnataka" experienceDescription={[" Managed lead generation and business expansion strategies.", "Identified and engaged potential clients through outreach.", "Contributed in the scrapping extensions of the company."]}           experienceBoxStyle=" box-border  col-span-1 px-8 text-[13px] my-5  text-left   row-start-2 row-end-3 col-start-1 text-amber-50  "/>
+                      <Experience experienceTitle="Junior Training Manager | BANAO Technologies Benagaluru, Karnataka"        experienceDescription={["Assisted senior trainers in onboarding and training new hires", "Supervised a team of BDAs and promoted a positive team culture.", "Analyzed team progress and maintained performance records."]} experienceBoxStyle=" box-border  col-span-1 px-8 text-[13px] my-5  text-left   row-start-3 row-end-4 col-start-2 text-amber-50 "/>
                 </div>
            </section>
 
@@ -130,7 +130,7 @@ function trgrMobNav(){
 
                <Headings pageHeadingStyle="" pageHeading="Contact" />
               
-                       <p className="text-amber-50 min-[780px]:text-center text-justify py-10 px-10">
+                       <p className="text-amber-50 min-[780px]:text-center text-justify py-10 px-10  md:text-[15px] text-[12px]">
                          I'm always excited to collaborate on new and exciting projects — whether it's frontend development, full-stack applications, or just tech talk! <br></br> If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out. <br></br> Let's build something amazing together!
                        </p>
 
