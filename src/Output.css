@@ -394,10 +394,6 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -405,6 +401,14 @@
   .border-\[3px\] {
     border-style: var(--tw-border-style);
     border-width: 3px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
   }
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
@@ -423,9 +427,6 @@
   }
   .border-black {
     border-color: var(--color-black);
-  }
-  .border-blue-800 {
-    border-color: var(--color-blue-800);
   }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
@@ -531,6 +532,15 @@
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
   .text-center {
     text-align: center;
   }
@@ -588,6 +598,13 @@
       @media (hover: hover) {
         border-style: var(--tw-border-style);
         border-width: 1px;
+      }
+    }
+  }
+  .hover\:border-amber-50 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-amber-50);
       }
     }
   }
