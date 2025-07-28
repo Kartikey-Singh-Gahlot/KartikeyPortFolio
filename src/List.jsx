@@ -8,7 +8,7 @@ export default function List({mainLi, subLi, link, linkTarget, subLink, onClk}){
     <ul>
         <div className="relative mainBox">
          <li className="hover:bg-blue-700  text-[15px] border-[1px] border-black text-amber-50 px-6 py-2 w-full rounded-3xl" onClick={onClk}> <a href={link} target={linkTarget}>{mainLi}</a> </li>
-         <ul className="absolute subBox w-fit left-2">
+         <ul className="absolute subBox w-full left-1">
             {subItems}
          </ul>
         </div>
