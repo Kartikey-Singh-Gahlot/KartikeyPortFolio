@@ -4,7 +4,7 @@ const Routes = require('./Routes/utilityRoutes.js');
 const app = express();
 const cors = require('cors');
 
-app.use(cors({origin:true}));
+app.use(cors({origin:"https://vercel.com/kartikey-singh-gahlots-projects-49fa3347/kartikey-portfolio-frontend"}));
 
 connectDb().then(()=> console.log("database connected")).catch((err)=>{console.log(err)});
 
