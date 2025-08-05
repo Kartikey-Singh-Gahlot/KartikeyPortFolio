@@ -18,7 +18,7 @@ let [headerStyle, setHeaderStyle] = useState(headerData[0]);
 let [navStyle, setNavStyle] = useState(navData[0]);
 
 const getData = async ()=>{ 
-   const unprocessed = await fetch("http://localhost:8080/description");
+   const unprocessed = await fetch("https://kartikey-portfolio-backend.vercel.app/description");
    const processed = await unprocessed.json();
    setDescriptionData(processed.body); 
  }
