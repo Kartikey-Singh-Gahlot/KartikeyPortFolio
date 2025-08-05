@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme{
+    --font-roboto : "Roboto", sans-serif;
+}
+
+.introText::after{
+  content : " ";
+  position: relative;
+  animation-name: introTextAnim;
+  padding-right: 5px;
+  animation-duration: 6500ms;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  border-right: 3px solid white;
+  width: fit-content;
+}
+
+
+@keyframes introTextAnim {
+   0%{content:" "}
+   3%{content:" D"} 
+   6%{content:" De"} 
+   9%{content:" Dev"} 
+  15%{content:" Deve"} 
+  18%{content:" Devel"} 
+  21%{content:" Develo"} 
+  24%{content:" Develop"} 
+  27%{content:" Develope"} 
+  30%{content:" Developer"} 
+  33%{content:" Developer "} 
+  36%{content:" Developer"} 
+  39%{content:" Develope"} 
+  42%{content:" Develop"} 
+  45%{content:" Develo"} 
+  48%{content:" Devel"} 
+  51%{content:" Deve"} 
+  54%{content:" Dev"} 
+  57%{content:" De"} 
+  60%{content:" D"} 
+  63%{content:" "} 
+  66%{content:" C"} 
+  69%{content:" Co"} 
+  72%{content:" Cod"} 
+  75%{content:" Code"} 
+  78%{content:" Coder"} 
+  81%{content:" Coder "} 
+  84%{content:" Coder"}
+  87%{content:" Code"}
+  90%{content:" Cod"}
+  93%{content:" Co"}
+  96%{content:" C"}
+  99%{content:" "} 
+}
+
+.triangleBg{
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.mainHeadings{
+  font-size: 20px;
+}
+
+.subBox{
+  display: none;
+}
+
+.mainBox:hover .subBox{
+  display: block;
+}
