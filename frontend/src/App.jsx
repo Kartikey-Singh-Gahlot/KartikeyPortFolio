@@ -137,12 +137,11 @@ function trgrMobNav(){
            </section>
 
 
-          <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 " id="pageThree">
+          <section className="pages h-fit flex flex-col  items-center justify-between gap-10 pt-10 pb-30 " id="pageThree">
                <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
                
                 <Projects data = {descriptionData.project} />
                
-                 
           </section>
          
           <section className="pages h-fit flex flex-col items-center" id="pageFour">
