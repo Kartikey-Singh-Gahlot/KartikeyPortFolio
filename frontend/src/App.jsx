@@ -21,7 +21,9 @@ let [descriptionData, setDescriptionData] = useState({
   experience: [
     { title: "", description: [""] }
   ],
-  projectDescriptions: [],
+  project : [
+    { title: "", description: [""] }
+  ],
   contactDescription: ""
 });
 
@@ -145,9 +147,7 @@ function trgrMobNav(){
           <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 " id="pageThree">
                <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
                <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-2 p-5 relative">
-                    <Projects projectId="projectOne"    link="https://gaming-arena-neon.vercel.app/"            projHdng="Gaming Arena"            projDscrptn={descriptionData.projectDescriptions[0]} videoSrc="/gamingArenaVideo.mp4"/>
-                    <Projects projectId="projectTwo"    link="https://to-do-app-woad-seven.vercel.app/"         projHdng="ToDo App"                projDscrptn={descriptionData.projectDescriptions[1]} videoSrc="/toDoAppVideo.mp4"    />
-                    <Projects projectId="projectThree"  link="https://kartikey-singh-gahlot.github.io/ChatBot/" projHdng="Patient Query Webpage"   projDscrptn={descriptionData.projectDescriptions[2]} videoSrc="/chatBotAppVideo.mp4" />
+                     <Projects data = {descriptionData.project} />
                </div>
                  
           </section>

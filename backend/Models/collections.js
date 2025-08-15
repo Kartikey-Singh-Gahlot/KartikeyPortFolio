@@ -19,20 +19,16 @@ mainLogo: {
   },
   experience: [
     {
-      title: {
-        type: String,
-        required: true,
-      },
-      description: {
-        type: [String], 
-        required: true,
-      },
+      title: { type: String, required: true },
+      description: { type: [String],  required: true},
     },
   ],
-  projectDescriptions: {
-    type: [String],
-    required: true,
-  },
+  project : [
+    {
+      title : { type : String, required : true },
+      description : {type : [String], required: true}
+    }
+  ],
   contactDescription: {
     type: String,
     required: true,
