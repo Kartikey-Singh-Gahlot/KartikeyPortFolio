@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const descriptionSchema = new mongoose.Schema({
-  mainLogo: {
+mainLogo: {
     type: String,
     required: true,
   },
@@ -17,14 +17,18 @@ const descriptionSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  experienceTitles: {
-    type: [String],
-    required: true,
-  },
-  experienceDescriptions: {
-    type: [[String]], 
-    required: true,
-  },
+  experience: [
+    {
+      title: {
+        type: String,
+        required: true,
+      },
+      description: {
+        type: [String], 
+        required: true,
+      },
+    },
+  ],
   projectDescriptions: {
     type: [String],
     required: true,
@@ -32,7 +36,7 @@ const descriptionSchema = new mongoose.Schema({
   contactDescription: {
     type: String,
     required: true,
-  }
+  },
 });
 
 

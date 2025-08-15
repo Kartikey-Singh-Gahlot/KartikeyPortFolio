@@ -12,7 +12,20 @@ import Experience from "./Experience.jsx";
 export default function App(){
 
 
-let [descriptionData, setDescriptionData] = useState({_id:"",mainLogo: "",welcomeText: "",introText: "",aboutDescription: "",experienceTitles: [],experienceDescriptions: [[]],projectDescriptions: [],contactDescription: ""});
+let [descriptionData, setDescriptionData] = useState({
+  _id: "",
+  mainLogo: "",
+  welcomeText: "",
+  introText: "",
+  aboutDescription: "",
+  experience: [
+    { title: "", description: [""] }
+  ],
+  projectDescriptions: [],
+  contactDescription: ""
+});
+
+
 let [status, setStatus] = useState(0);
 let [headerStyle, setHeaderStyle] = useState(headerData[0]);
 let [navStyle, setNavStyle] = useState(navData[0]);
@@ -124,9 +137,8 @@ function trgrMobNav(){
           <section>
                <Headings pageHeading="Experience" pageHeadingStyle="w-full text-center" />   
                <div className="col-start-1 col-end-3 mt-10 md:grid flex flex-col grid-cols-2 grid-rows-[auto] mb-10 ">    
-                    <Experience experienceTitle={descriptionData.experienceTitles[0]}  experienceDescription={descriptionData.experienceDescriptions[0]}  experienceBoxStyle="px-8 text-[13px] my-5 md:text-right text-left row-start-2 row-end-3 col-start-1 text-amber-50  "/>
-                    <Experience experienceTitle={descriptionData.experienceTitles[1]}  experienceDescription={descriptionData.experienceDescriptions[1]}  experienceBoxStyle="px-8 text-[13px] my-5 md:text-left text-left  row-start-3 row-end-4 col-start-2 text-amber-50" />
-               </div>
+                     <Experience data = {descriptionData.experience}/>
+                </div>
            </section>
 
 

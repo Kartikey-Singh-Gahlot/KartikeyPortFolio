@@ -5,7 +5,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: "https://kartikey-portfolio-frontend.vercel.app",
+  origin: true,
    methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
