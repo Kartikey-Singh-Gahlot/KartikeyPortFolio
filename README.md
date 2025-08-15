@@ -1,4 +1,4 @@
-# Project Title
+# Kartz_Portfolio
 
 A full stack personal portfolio site showcasing my work and achievements
 
