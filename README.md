@@ -6,8 +6,7 @@ A full stack personal portfolio site showcasing my work and achievements
 [Visit the live site](https://kartikey-portfolio-frontend.vercel.app/)
 
 ## Features
-- Feature 1 (e.g., interactive gallery, contact form)
-- Feature 2
+-  decent and attractive design and smooth functionality all over the web page
 
 ## Tech Stack
 - Frontend: React.js, Tailwindcss
