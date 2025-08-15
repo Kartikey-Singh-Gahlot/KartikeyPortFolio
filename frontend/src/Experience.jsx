@@ -1,7 +1,7 @@
 export default function Experience({data}){
 
   const processed = data.map((i, idx)=>{
-     const style =  (idx / 2 != 0) ? `col-start-1 row-start-${idx}` : `col-start-2 row-start-${idx}`;
+     const style =  (idx % 2 == 0) ? `col-start-1 row-start-${idx+1}` : `col-start-2 row-start-${idx+1}`;
      return (
      <div className={style}>
           <h1 className="w-full min-[780px]:text-[18px] text-[12px] font-bold">{i.title}</h1>
