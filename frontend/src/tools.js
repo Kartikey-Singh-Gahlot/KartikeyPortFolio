@@ -1,7 +1,3 @@
-export const project01Decription = "Gaming Arena is a web-based project that brings an one and all platform for fun mini games. Navigate to the game of your choice from the main menu. Enjoy the interactive experience and challenge your friends!";
-export const project02Decription = "A simple and fun web-based to-do list built using React, HTML and CSS with add, delete upper or lower case modification utility. This web page helps you manage your daily tasks with ease.";
-export const project03Decription = "A patient query webpage for a hospital built using HTML, CSS and Javscript along with Open AI API integration solves every pateint query using integrated chatbot";
-export const aboutMeDecription = "Motivated and goal driven B-tech CSE student of JECRC University, Jaipur. I have a strong foundation in programming, DSA and web development along with great problem solving skills. I want to secure a Software Development Engineering role at a organization for which i can work for the betterment of myself as well as the organization.";
 
 export const cvLink = "/KartikeySinghGahlotCv.pdf";
 export const mailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=2002gehlotkartikeysingh@gmail.com&su=Hiring&body=Hi%20Kartikey";
