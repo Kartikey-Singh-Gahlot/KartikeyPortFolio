@@ -14,17 +14,12 @@ export default function App(){
 
 let [descriptionData, setDescriptionData] = useState({
   _id: "",
-  mainLogo: "",
-  welcomeText: "",
-  introText: "",
-  aboutDescription: "",
   experience: [
     { title: "", description: [""] }
   ],
   project : [
     { title: "", description: [""] }
-  ],
-  contactDescription: ""
+  ]
 });
 
 
@@ -66,7 +61,7 @@ function trgrMobNav(){
           <header className={headerStyle}>
 
                <div className="flex justify-around w-full">
-                 <h1 className="text-[15px] w-full text-amber-50 font-roboto sm:text-2xl ">{descriptionData.mainLogo}</h1>
+                 <h1 className="text-[15px] w-full text-amber-50 font-roboto sm:text-2xl ">Kartikey Singh Gahlot</h1>
                  <div className="block min-[790px]:hidden " onClick={trgrMobNav}>
                       <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
                       <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
@@ -94,8 +89,8 @@ function trgrMobNav(){
                <div className=" flex flex-col min-[430px]:flex-row  min-[430px]:justify-evenly items-center justify-center box-border min-[430px]:px-10  gap-10">
 
                  <div className="min-[430px]:h-full h-fit flex flex-col justify-center gap-2">
-                      <h1 className=" min-[430px]:py-2 py-0 w-full text-amber-50 min-[790px]:text-4xl text-2xl">{descriptionData.welcomeText}</h1>
-                      <h1 className=" min-[430px]:py-2 py-0 w-fit  text-amber-50 min-[790px]:text-4xl text-2xl overflow-hidden introText inline-block  box-border">{descriptionData.introText}</h1>
+                      <h1 className=" min-[430px]:py-2 py-0 w-full text-amber-50 min-[790px]:text-4xl text-2xl">Hello, Kartikey this side !</h1>
+                      <h1 className=" min-[430px]:py-2 py-0 w-fit  text-amber-50 min-[790px]:text-4xl text-2xl overflow-hidden introText inline-block  box-border">I'm a</h1>
                  </div>
 
                  <div className="relative p-3.5 ">
@@ -131,24 +126,22 @@ function trgrMobNav(){
                 <div className="">
                     <Headings  pageHeading="About me" />
                     <p className="text-amber-50  md:text-[15px] text-[12px] text-justify">
-                         {descriptionData.aboutDescription}
+                         Motivated and goal driven B-tech CSE student of JECRC University, Jaipur. I have a strong foundation in programming, DSA and web development along with great problem solving skills. I want to secure a Software Development Engineering role at a organization for which I can work for the betterment of myself as well as the organization.
                    </p>
                 </div>
           </section>
 
           <section>
                <Headings pageHeading="Experience" pageHeadingStyle="w-full text-center" />   
-               <div className="col-start-1 col-end-3 mt-10 md:grid flex flex-col grid-cols-2 grid-rows-[auto] mb-10 ">    
-                     <Experience data = {descriptionData.experience}/>
-                </div>
+               <Experience data = {descriptionData.experience}/>
            </section>
 
 
           <section className="pages h-fit flex flex-col justify-between gap-10 pt-10 pb-30 " id="pageThree">
                <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
-               <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-2 p-5 relative">
-                     <Projects data = {descriptionData.project} />
-               </div>
+               
+                <Projects data = {descriptionData.project} />
+               
                  
           </section>
          
@@ -157,7 +150,7 @@ function trgrMobNav(){
                <Headings pageHeadingStyle="" pageHeading="Contact" />
               
                        <p className="text-amber-50 min-[780px]:text-center text-justify py-10 px-10  md:text-[15px] text-[12px]">
-                           {descriptionData.contactDescription}
+                          I'm always excited to collaborate on new and exciting projects — whether it's frontend development, full-stack applications, or just tech talk!<br></br>If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out. <br></br>Let's build something amazing together!
                        </p>
 
                     <footer className="flex w-full h-fit items-center justify-center  bg-gradient-to-r from-gray-800 to-gray-950 py-10">

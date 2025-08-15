@@ -4,9 +4,9 @@ export default function Projects({data}){
     const processed = data.map((i)=>{
         return (
             <a href={i.link} className="border-amber-50 hover:bg-black hover:border-[1px] relative flex flex-col gap-10  shadow-black box-border  rounded-[10px] justify-center px-3 pt-3 pb-10 text-amber-50 ">
-                <h1 className="text-center w-full text-2xl">{i.title}</h1>
+                <h1 className="text-center  w-full text-2xl">{i.title}</h1>
                 
-                <video autoPlay loop muted playsInline className=" w-full object-contain rounded-[10px] border-[1px] border-amber-50" src={i.src}/>
+                <video autoPlay loop muted playsInline className=" w- object-contain rounded-[10px] border-[1px] border-amber-50" src={i.src}/>
                 
                 <p className="w-full  md:text-[15px] text-[12px] text-justify">
                     {i.description} 
@@ -16,8 +16,8 @@ export default function Projects({data}){
     })
 
     return(
-       <div>
-           {processed}
-       </div>
+        <div className="grid grid-cols-1  min-[780px]:grid-cols-3 min-[500px]:grid-cols-2  grid-rows-auto gap-2 p-5 relative">
+             {processed}
+        </div>   
     );
 }
