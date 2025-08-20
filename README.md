@@ -10,7 +10,7 @@ A full stack personal portfolio site showcasing my work and achievements
 
 ## Tech Stack
 - Frontend: React.js, Tailwindcss
-- Backend: Node.js, Express.js, MoongoDB
+- Backend: Node.js, Express.js, MongoDB
 
 ## Getting Started
 
