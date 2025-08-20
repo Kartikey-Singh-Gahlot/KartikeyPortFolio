@@ -88,7 +88,7 @@ function trgrMobNav(){
 
                <div className=" flex flex-col min-[430px]:flex-row  min-[430px]:justify-evenly items-center justify-center box-border min-[430px]:px-10  gap-10">
 
-                 <div className="min-[430px]:h-full h-fit flex flex-col justify-center gap-2">
+                 <div className="min-[430px]:h-full h-fit flex flex-col justify-center gap-2 mt-5">
                       <h1 className=" min-[430px]:py-2 py-0 w-full text-amber-50 min-[790px]:text-4xl text-2xl">Hello, Kartikey this side !</h1>
                       <h1 className=" min-[430px]:py-2 py-0 w-fit  text-amber-50 min-[790px]:text-4xl text-2xl overflow-hidden introText inline-block  box-border">I'm a</h1>
                  </div>
