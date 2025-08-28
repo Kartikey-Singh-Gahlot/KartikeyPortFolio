@@ -13,8 +13,8 @@ export default function Projects({data}){
                     {i.description} 
                 </p>
 
-                <ul className="list-disc list-inside space-y-1">
-                    {i.techUsed.map((tech, idx) => ( <li key={idx}>{tech}</li>))}
+                <ul className="flex w-full gap-3">
+                    {i.techUsed.map((tech, idx) => ( <li className="border-[1px] border-amber-50 px-3" key={idx}>{tech}</li>))}
                </ul>
             </a> 
         );
