@@ -157,7 +157,7 @@ function trgrMobNav(){
                        </p>
 
                     <footer className="flex w-full h-fit items-center justify-center  bg-gradient-to-r from-gray-800 to-gray-950 py-10">
-                         <ul className=" min-[500px]:flex grid grid-cols-1 grid-rows-[auto] text-amber-50 justify-around items-center box-border">
+                         <ul className="flex  text-amber-50 justify-around items-center box-border">
                             <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="/mailIcon.png"      className="m-1 h-4"/>:<a  href="mailto:2002gehlotkartikeysingh@gmail.com"  target="_blank" className="mx-1 underline hover:text-blue-400">Email</a></li>
                             <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="/locationIcon.png"  className="m-1 h-4"/>:<a  href="https://maps.app.goo.gl/yF6NrNoHcPGcdYTu8" target="_blank" className="mx-1 underline hover:text-blue-400">Location</a></li>
                             <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="githubIcon.png"     className="m-1 h-4"/>:<a  href="https://github.com/kartikey-singh-gahlot"  target="_blank" className="mx-1 underline hover:text-blue-400">GitHub</a></li>       
