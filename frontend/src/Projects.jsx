@@ -14,7 +14,7 @@ export default function Projects({data}){
                 </p>
 
                 <ul className="flex w-full gap-3">
-                    {i.techUsed.map((tech, idx) => ( <li className="border-[1px] border-amber-50 px-3" key={idx}>{tech}</li>))}
+                    {i.techUsed.map((tech, idx) => ( <li className="border-[1px] border-amber-50 px-3 md:text-[15px] text-[12px]"  key={idx}>{tech}</li>))}
                </ul>
             </a> 
         );
