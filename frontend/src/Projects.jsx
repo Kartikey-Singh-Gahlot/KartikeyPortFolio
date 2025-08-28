@@ -11,6 +11,14 @@ export default function Projects({data}){
                 <p className="w-full  md:text-[15px] text-[12px] text-justify">
                     {i.description} 
                 </p>
+
+                <ul className="list-disc list-inside space-y-1">
+  {i.techUsed.map((tech, idx) => (
+    <li key={idx} className="text-sm text-amber-200">
+      {tech}
+    </li>
+  ))}
+</ul>
             </a> 
         );
     })

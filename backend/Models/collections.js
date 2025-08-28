@@ -9,9 +9,13 @@ const descriptionSchema = new mongoose.Schema({
   ],
   project : [
     {
-      title : { type : String, required : true },
-      description : {type : [String], required: true}
+      title: { type: String, required: true },
+      description: { type: String, required: true },
+      link: { type: String },
+      src: { type: String },
+      techUsed: { type: [String], default: [] }
     }
+
   ]
 });
 
