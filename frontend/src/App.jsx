@@ -14,11 +14,15 @@ export default function App(){
 
 let [descriptionData, setDescriptionData] = useState({
   _id: "",
-  experience: [
-    { title: "", description: [""] }
-  ],
+  experience: [ { title: "", description: [""] }],
   project : [
-    { title: "", description: [""] }
+     { 
+      title: "", 
+      description: "",   
+      link: "", 
+      src: "", 
+      techUsed: [] 
+    }
   ]
 });
 
