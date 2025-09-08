@@ -4,7 +4,7 @@ export default function Projects({data}){
     const processed = data.map((i)=>{
         console.log(i.techUsed)
         return (
-            <a href={i.link} className="border-amber-50 hover:bg-black hover:border-[1px] relative flex flex-col gap-10  shadow-black box-border  rounded-[10px] justify-center px-3 pt-3 pb-10 text-amber-50 ">
+            <a href={i.link} className="border-amber-50 hover:bg-black hover:border-[1px] relative flex flex-col gap-10  shadow-black box-border  rounded-[10px] justify-center px-3 pt-3 pb-10 text-amber-50">
                 <h1 className="text-center  w-full text-2xl">{i.title}</h1>
                 
                 <video autoPlay loop muted playsInline className=" w- object-contain rounded-[10px] border-[1px] border-amber-50" src={i.src}/>
@@ -13,7 +13,7 @@ export default function Projects({data}){
                     {i.description} 
                 </p>
 
-                <ul className="flex w-full gap-3">
+                <ul className="flex flex-wrap w-full gap-3">
                     {i.techUsed.map((tech, idx) => ( <li className="border-[1px] border-amber-50 px-3 md:text-[15px] text-[12px]"  key={idx}>{tech}</li>))}
                </ul>
             </a> 
