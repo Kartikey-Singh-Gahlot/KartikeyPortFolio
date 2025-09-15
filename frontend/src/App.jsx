@@ -5,26 +5,16 @@ import Projects from "./Projects.jsx";
 import Headings from "./Headings.jsx";
 import List from "./List.jsx";
 import Skills from "./Skills.jsx";
-import {mailLink, cvLink, myPicLink, headerData, navData} from "./tools.js" ;
+import {mailLink, cvLink, myPicLink, headerData, navData ,backendApiBaseUrl} from "./tools.js" ;
 import { useState, useEffect } from "react";
 import Experience from "./Experience.jsx";
+import Loader from "./Loader.jsx";
+
 
 export default function App(){
 
 
-let [descriptionData, setDescriptionData] = useState({
-  _id: "",
-  experience: [ { title: "", description: [""] }],
-  project : [
-     { 
-      title: "", 
-      description: "",   
-      link: "", 
-      src: "", 
-      techUsed: [] 
-    }
-  ]
-});
+let [descriptionData, setDescriptionData] = useState(null);
 
 
 let [status, setStatus] = useState(0);
@@ -32,7 +22,7 @@ let [headerStyle, setHeaderStyle] = useState(headerData[0]);
 let [navStyle, setNavStyle] = useState(navData[0]);
 
 const getData = async ()=>{ 
-   const unprocessed = await fetch("https://kartikey-portfolio-backend.vercel.app/description");
+   const unprocessed = await fetch(`${backendApiBaseUrl}/description`);
    const processed = await unprocessed.json();
    setDescriptionData(processed.body); 
  }
@@ -78,7 +68,7 @@ function trgrMobNav(){
                        <ul className={navStyle}>
                             <List mainLi="Home"  link="#pageOne" linkTarget="" onClk={trgrMobNav}/>
                             <List mainLi="About" link="#pageTwo" linkTarget="" onClk={trgrMobNav}/>
-                            <List mainLi="Projects" subLi={["One","Two"]} subLink={["#projectOne", "#projectTwo"]} link="#pageThree" linkTarget="" onClk={trgrMobNav}/>
+                            <List mainLi="Projects" link="#pageThree" linkTarget="" onClk={trgrMobNav}/>
                             <List mainLi="Contact" link="#pageFour" linkTarget="" onClk={trgrMobNav}/>
                        </ul>
 
@@ -135,18 +125,28 @@ function trgrMobNav(){
                 </div>
           </section>
 
-          <section>
-               <Headings pageHeading="Experience" pageHeadingStyle="w-full text-center" />   
+
+          {(descriptionData != null )?
+
+          <section> 
+               <Headings pageHeading="Experience" pageHeadingStyle="w-full text-center" /> 
                <Experience data = {descriptionData.experience}/>
-           </section>
-
-
-          <section className="pages h-fit flex flex-col  items-center justify-between gap-10 pt-10 pb-30 " id="pageThree">
-               <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
-               
-                <Projects data = {descriptionData.project} />
-               
           </section>
+
+          :<Loader/>
+          }
+
+          {(descriptionData != null)?
+            <section className="pages h-fit flex flex-col  items-center justify-between gap-10 pt-10 pb-30 " id="pageThree">
+               <Headings pageHeadingStyle="w-full" pageHeading="Projects"/>
+               <Projects data = {descriptionData.project} />  
+          </section>
+         
+          :<Loader/>
+          }
+     
+
+
          
           <section className="pages h-fit flex flex-col items-center" id="pageFour">
 

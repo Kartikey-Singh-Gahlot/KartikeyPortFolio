@@ -1,8 +1,9 @@
 
 export default function Projects({data}){
+
+
  
     const processed = data.map((i)=>{
-        console.log(i.techUsed)
         return (
             <a href={i.link} className="border-amber-50 hover:bg-black hover:border-[1px] relative flex flex-col gap-10  shadow-black box-border  rounded-[10px] justify-center px-3 pt-3 pb-10 text-amber-50">
                 <h1 className="text-center  w-full text-2xl">{i.title}</h1>
