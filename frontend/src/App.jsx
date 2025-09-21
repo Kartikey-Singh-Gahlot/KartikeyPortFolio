@@ -51,7 +51,7 @@ function trgrMobNav(){
 
   return(
     <div className="mainWrapper bg-gradient-to-r from-[#141E30] to-black ">
-
+      
           <header className={headerStyle}>
 
                <div className="flex justify-around w-full">
@@ -163,7 +163,8 @@ function trgrMobNav(){
                             <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="githubIcon.png"     className="m-1 h-4"/>:<a  href="https://github.com/kartikey-singh-gahlot"                     target="_blank" className="mx-1 underline hover:text-blue-400">GitHub</a></li>       
                         </ul>
                     </footer>               
-          </section>
+          </section>: <Loader/>
+          
 
     </div>
   )
