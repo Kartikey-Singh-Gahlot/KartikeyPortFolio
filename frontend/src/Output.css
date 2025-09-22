@@ -439,6 +439,10 @@
     border-style: var(--tw-border-style);
     border-width: 5px;
   }
+  .border-\[1\] {
+    border-style: var(--tw-border-style);
+    border-width: 1;
+  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -491,6 +495,9 @@
     --tw-border-style: double;
     border-style: double;
   }
+  .border-\[\#00000000\] {
+    border-color: #00000000;
+  }
   .border-\[\#ffffff3e\] {
     border-color: #ffffff3e;
   }
@@ -502,6 +509,9 @@
   }
   .border-\[\#ffffff47\] {
     border-color: #ffffff47;
+  }
+  .border-\[black\] {
+    border-color: black;
   }
   .border-\[w\] {
     border-color: w;
@@ -703,6 +713,13 @@
       @media (hover: hover) {
         border-style: var(--tw-border-style);
         border-width: 1px;
+      }
+    }
+  }
+  .hover\:border-amber-50 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-amber-50);
       }
     }
   }
