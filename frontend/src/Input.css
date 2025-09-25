@@ -72,16 +72,19 @@
 }
 
 
-.loadingAnimation{
-  animation-name: loading;
-  animation-duration: 500ms;
+.loadingText::after{
+  content:".";
+  position: absolute;
+  animation-name:loadingTextAnimation;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-
-@keyframes loading{
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
+@keyframes loadingTextAnimation {
+  0%{content: "";}
+  25%{content:".";}
+  50%{content:"..";}
+  75%{content:"...";}
+  100%{content:"....";}
 }
