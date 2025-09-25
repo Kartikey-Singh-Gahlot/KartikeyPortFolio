@@ -10,7 +10,12 @@ app.use(cors({
   credentials: true
 }));
 
-connectDb().then(()=> console.log("database connected")).catch((err)=>{console.log(err)});
+
+connectDb().then(()=>{
+   console.log("connected");
+}).catch(()=>{
+  process.exit(1);
+})
 
 
 app.use("/",Routes);
