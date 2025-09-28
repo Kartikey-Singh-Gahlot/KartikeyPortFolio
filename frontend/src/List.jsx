@@ -7,7 +7,7 @@ export default function List({mainLi, subLi, link, linkTarget, subLink, onClk}){
     return (
     <ul>
         <div className="relative mainBox">
-         <li className="hover:bg-blue-700  text-[15px] border-[1px] border-black text-amber-50 px-6 py-2 w-full rounded-3xl" onClick={onClk}> <a href={link} target={linkTarget}>{mainLi}</a> </li>
+         <li className="hover:bg-blue-700 min-[780px]:w-full text-[15px] border-[1px] border-black text-amber-50 px-6 py-2 w-fit rounded-3xl" onClick={onClk}> <a href={link} target={linkTarget}>{mainLi}</a> </li>
          <ul className="absolute subBox w-full left-1">
             {subItems}
          </ul>
@@ -19,7 +19,7 @@ export default function List({mainLi, subLi, link, linkTarget, subLink, onClk}){
  else{
 
     return(
-          <li className="hover:bg-blue-700 text-[15px] text-amber-50 px-6 py-2 w-full rounded-3xl" onClick={onClk}><a  href={link} target={linkTarget}>{mainLi}</a></li> 
+          <li className="hover:bg-blue-700  min-[780px]:my-0  min-[780px]:rounded-3xl my-2  min-[780px]:border-black border-blue-900 border-[1px] text-[15px] text-amber-50 px-6 py-2 w-full text-center rounded-[15px]" onClick={onClk}><a  href={link} target={linkTarget}>{mainLi}</a></li> 
     );
  }
 }

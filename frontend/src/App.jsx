@@ -5,7 +5,7 @@ import Projects from "./Projects.jsx";
 import Headings from "./Headings.jsx";
 import List from "./List.jsx";
 import Skills from "./Skills.jsx";
-import {mailLink, cvLink, myPicLink, headerData, navData ,backendApiBaseUrl} from "./tools.js" ;
+import {mailLink, cvLink, myPicLink, headerData, navData , hrData, backendApiBaseUrl} from "./tools.js" ;
 import { useState, useEffect } from "react";
 import Experience from "./Experience.jsx";
 import Loader from "./Loader.jsx";
@@ -20,6 +20,7 @@ let [descriptionData, setDescriptionData] = useState(null);
 let [status, setStatus] = useState(0);
 let [headerStyle, setHeaderStyle] = useState(headerData[0]);
 let [navStyle, setNavStyle] = useState(navData[0]);
+let [hrStyle, setHrStyle] = useState(hrData[0]);
 
 const getData = async ()=>{ 
    const unprocessed = await fetch(`${backendApiBaseUrl}/description`);
@@ -41,11 +42,13 @@ function trgrMobNav(){
      setStatus(1);
      setHeaderStyle(headerData[1]);
      setNavStyle(navData[1]);
+     setHrStyle(hrData[1]);
   }
   else{
      setStatus(0);
      setHeaderStyle(headerData[0]);
      setNavStyle(navData[0]);
+     setHrStyle(hrData[0]);
   }
 }
 
@@ -57,19 +60,19 @@ function trgrMobNav(){
                <div className="flex justify-around w-full">
                  <h1 className="text-[15px] w-full text-amber-50 font-roboto sm:text-2xl ">Kartikey Singh Gahlot</h1>
                  <div className="block min-[790px]:hidden " onClick={trgrMobNav}>
-                      <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
-                      <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
-                      <hr className="bg-amber-50 w-5 border-0 h-[1px] my-1.5"/>
+                      <hr className={hrStyle.one}/>
+                      <hr className={hrStyle.two}/>
+                      <hr className={hrStyle.three}/>
                  </div>
                 </div>
 
                <nav className="">
 
                        <ul className={navStyle}>
-                            <List mainLi="Home"  link="#pageOne" linkTarget="" onClk={trgrMobNav}/>
-                            <List mainLi="About" link="#pageTwo" linkTarget="" onClk={trgrMobNav}/>
-                            <List mainLi="Projects" link="#pageThree" linkTarget="" onClk={trgrMobNav}/>
-                            <List mainLi="Contact" link="#pageFour" linkTarget="" onClk={trgrMobNav}/>
+                            <List   mainLi="Home"  link="#pageOne" linkTarget="" onClk={trgrMobNav}/>
+                            <List   mainLi="About" link="#pageTwo" linkTarget="" onClk={trgrMobNav}/>
+                            <List   mainLi="Projects" link="#pageThree" linkTarget="" onClk={trgrMobNav}/>
+                            <List   mainLi="Contact" link="#pageFour" linkTarget="" onClk={trgrMobNav}/>
                        </ul>
 
                  </nav>
@@ -150,10 +153,10 @@ function trgrMobNav(){
          
           <section className="pages h-fit flex flex-col items-center" id="pageFour">
 
-               <Headings pageHeadingStyle="" pageHeading="Contact" />
+     
               
                        <p className="text-amber-50 min-[780px]:text-center text-justify py-10 px-10  md:text-[15px] text-[12px]">
-                          I'm always excited to collaborate on new and exciting projects — whether it's frontend development, full-stack applications, or just tech talk!<br></br>If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out. <br></br>Let's build something amazing together!
+                          If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out. <br></br>Let's build something amazing together!
                        </p>
 
                     <footer className="flex w-full h-fit items-center justify-center  bg-gradient-to-r from-gray-800 to-gray-950 py-10">
