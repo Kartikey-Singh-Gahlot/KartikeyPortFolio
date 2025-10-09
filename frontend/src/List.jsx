@@ -19,7 +19,7 @@ export default function List({mainLi, subLi, link, linkTarget, subLink, onClk}){
  else{
 
     return(
-          <li className="hover:bg-blue-700  min-[780px]:my-0  min-[780px]:rounded-3xl my-2  min-[780px]:border-black border-blue-900 border-[1px] text-[15px] text-amber-50 px-6 py-2 w-full text-center rounded-[15px]" onClick={onClk}><a  href={link} target={linkTarget}>{mainLi}</a></li> 
+          <li onClick={onClk}><a  href={link} target={linkTarget} className="hover:bg-blue-700 min-[780px]:my-0  min-[780px]:rounded-3xl my-2  min-[780px]:border-black border-blue-900 border-[1px] text-[15px] text-amber-50 px-6 py-2 w-full text-center rounded-[15px]">{mainLi}</a></li> 
     );
  }
 }

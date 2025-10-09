@@ -153,18 +153,20 @@ function trgrMobNav(){
          
           <section className="pages h-fit flex flex-col items-center" id="pageFour">
 
-     
+                      <Headings pageHeadingStyle="w-full" pageHeading="Get In Touch"/>
+
               
                        <p className="text-amber-50 min-[780px]:text-center text-justify py-10 px-10  md:text-[15px] text-[12px]">
                           If you’re looking for a passionate web developer who loves writing clean code and creating smooth user experiences, feel free to reach out. <br></br>Let's build something amazing together!
                        </p>
 
-                    <footer className="flex w-full h-fit items-center justify-center  bg-gradient-to-r from-gray-800 to-gray-950 py-10">
-                         <ul className="flex  text-amber-50 justify-around items-center box-border">
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="/mailIcon.png"      className="m-1 h-4"/>:<a  href="mailto:2002gehlotkartikeysingh@gmail.com"                     target="_blank" className="mx-1 underline hover:text-blue-400">Email</a></li>
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="/locationIcon.png"  className="m-1 h-4"/>:<a  href="https://www.linkedin.com/in/kartikey-singh-gahlot-58020124b/" target="_blank" className="mx-1 underline hover:text-blue-400">Linkedin</a></li>
-                            <li className="min-[780px]:text-[15px] text-[10px] flex items-center  mx-4 my-2 text-center min-[780px]:w-fit w-full"><img src="githubIcon.png"     className="m-1 h-4"/>:<a  href="https://github.com/kartikey-singh-gahlot"                     target="_blank" className="mx-1 underline hover:text-blue-400">GitHub</a></li>       
+                    <footer className="flex flex-col w-full h-fit items-center justify-center  bg-gradient-to-r from-gray-800 to-gray-950 pt-10">
+                         <ul className="flex  gap-5 text-amber-50 justify-around items-center box-border">
+                            <li className="flex items-center"><img src="/mailIcon.png"      className="m-1 h-5"/>:<a  href="mailto:2002gehlotkartikeysingh@gmail.com"                     target="_blank" className="underline hover:text-blue-400 min-[780px]:text-[15px] text-[10px]  mx-2 my-2 text-center min-[780px]:w-fit w-full">Email</a></li>
+                            <li className="flex items-center"><img src="/locationIcon.png"  className="m-1 h-5"/>:<a  href="https://www.linkedin.com/in/kartikey-singh-gahlot-58020124b"  target="_blank" className="underline hover:text-blue-400 min-[780px]:text-[15px] text-[10px]  mx-2 my-2 text-center min-[780px]:w-fit w-full">Linkedin</a></li>
+                            <li className="flex items-center"><img src="githubIcon.png"     className="m-1 h-5"/>:<a  href="https://github.com/kartikey-singh-gahlot"                     target="_blank" className="underline hover:text-blue-400 min-[780px]:text-[15px] text-[10px]  mx-2 my-2 text-center min-[780px]:w-fit w-full">GitHub</a></li>       
                         </ul>
+                         <h1 className="w-full text-center text-[15px] py-5 text-gray-400">© 2025 Kartz-Portfolio. All rights reserved.</h1>
                     </footer>               
           </section>
     </div>
