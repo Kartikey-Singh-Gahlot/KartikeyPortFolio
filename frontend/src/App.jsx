@@ -38,17 +38,19 @@ function trgrMobNav(){
 
   if (window.innerWidth >= 790) return;
 
-  if(status == 0){
-     setStatus(1);
-     setHeaderStyle(headerData[1]);
-     setNavStyle(navData[1]);
-     setHrStyle(hrData[1]);
+  if (status === 0) {
+    document.body.style.overflow = "hidden";
+    setStatus(1);
+    setHeaderStyle(headerData[1]);
+    setNavStyle(navData[1]);
+    setHrStyle(hrData[1]);
   }
-  else{
-     setStatus(0);
-     setHeaderStyle(headerData[0]);
-     setNavStyle(navData[0]);
-     setHrStyle(hrData[0]);
+  else {
+    document.body.style.overflow = "auto";
+    setStatus(0);
+    setHeaderStyle(headerData[0]);
+    setNavStyle(navData[0]);
+    setHrStyle(hrData[0]);
   }
 }
 
